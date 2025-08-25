@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-text: #f5f5f5;
+    --secondary-text: #a0a0a0;
+    --accent-color: #ff3b30; /* A spicy red-orange */
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.site-header {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.main-nav a {
+    color: var(--primary-text);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--accent-color);
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section > .container > p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    color: var(--secondary-text);
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 59, 48, 0.25);
+}
+
+/* --- Modules Section --- */
+.modules-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.module-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.module-card:hover {
+    background-color: #2a2a2a;
+}
+
+.module-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.module-header .icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.module-card.active .icon {
+    transform: rotate(45deg);
+}
+
+.module-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease;
+    padding: 0 20px;
+}
+
+.module-content p {
+    color: var(--secondary-text);
+    padding-bottom: 20px;
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: var(--surface-color);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.testimonial-card .quote {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .author {
+    font-weight: 700;
+}
+
+.testimonial-card .handle {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+/* --- Pricing Section --- */
+.pricing-card {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.pricing-card .price {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin: 20px 0;
+}
+
+.pricing-card .price-note {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+.features-list {
+    list-style: none;
+    text-align: left;
+    max-width: 250px;
+    margin: 30px auto;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.features-list li::before {
+    content: '✓';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+/* --- Footer --- */
+.site-footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    section h2 { font-size: 2rem; }
+
+    .site-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav a { margin: 0 10px; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero .subtitle { font-size: 1rem; }
+    .cta-button { width: 100%; text-align: center; }
+}
