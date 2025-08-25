@@ -1,0 +1,45 @@
+{
+  "courseModules": [
+    {
+      "title": "Module 1: The 'Spicy' Content Mindset",
+      "description": "Learn the psychological triggers that make content shareable and memorable. We break down the science of virality and how to stand out in a crowded digital space."
+    },
+    {
+      "title": "Module 2: AI-Powered Idea Generation",
+      "description": "Never run out of content ideas again. Master techniques to use AI tools like ChatGPT-4 and Claude to generate endless unique, edgy, and on-brand content concepts."
+    },
+    {
+      "title": "Module 3: Prompt Engineering for Edge",
+      "description": "Go beyond basic prompts. Learn advanced prompt engineering to coax controversial, humorous, and thought-provoking responses from AI, giving your content a unique voice."
+    },
+    {
+      "title": "Module 4: Crafting Viral Hooks & Scripts",
+      "description": "The first three seconds are everything. Use AI to write scroll-stopping hooks and compelling video scripts that keep your audience captivated from start to finish."
+    },
+    {
+      "title": "Module 5: AI for Visuals & Memes",
+      "description": "Create stunning and hilarious visuals without being a designer. Leverage AI image generators like Midjourney to create custom thumbnails, memes, and graphics that get clicks."
+    },
+    {
+      "title": "Module 6: Automation & Repurposing",
+      "description": "Work smarter, not harder. Learn to build an automated content machine that repurposes your core ideas across multiple platforms, maximizing your reach with minimal effort."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "I was stuck in a content rut, posting the same boring stuff. This course completely changed the game. My engagement is up 300% and I actually enjoy creating content now!",
+      "name": "Jessica Wang",
+      "handle": "@jessicacreates"
+    },
+    {
+      "quote": "The prompt engineering module alone is worth the price. I'm now creating content that is so uniquely 'me' but supercharged with AI. It's like having a brainstorming partner that never sleeps.",
+      "name": "Ben Carter",
+      "handle": "@thebencarter"
+    },
+    {
+      "quote": "If you want to stay ahead of the curve, you need this course. 'Spicy AI' isn't a gimmick; it's a framework for relevance in the age of AI. My brand has never felt more authentic or exciting.",
+      "name": "Aisha Khan",
+      "handle": "@aishakhanmedia"
+    }
+  ]
+}
